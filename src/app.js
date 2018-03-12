@@ -58,8 +58,23 @@
 
 // console.log(test(4, 1));
 
-function test(valueA, valueB = 4) {
-    return valueA + valueB;
+// function test(valueA, valueB = 4) {
+//     return valueA + valueB;
+// }
+
+// console.log(test(5));
+
+var list = [
+    "test",
+    34,
+    {name: "Guilherme"}
+];
+
+for(var i in list) {
+    // console.log(i);
+    // console.log(list[i]);
 }
 
-console.log(test(5));
+for(let i of list) {
+    console.log(i);
+}
