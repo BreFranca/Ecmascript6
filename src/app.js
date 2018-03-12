@@ -24,18 +24,29 @@
 
 // bob.printFriends();
 
-class Color {
-    constructor(codeColor, nameColor) {
-        this.codeColor = codeColor;
-        this.nameColor = nameColor;
-    };
-    getColor() {
-        return {
-            codeColor: this.codeColor,
-            nameColor: this.nameColor
-        }
-    };
-}
+// class Color {
+//     constructor(codeColor, nameColor) {
+//         this.codeColor = codeColor;
+//         this.nameColor = nameColor;
+//     };
+//     getColor() {
+//         return {
+//             codeColor: this.codeColor,
+//             nameColor: this.nameColor
+//         }
+//     };
+// }
 
-let red = new Color("ff0000", "Red");
-console.log(red.getColor());
+// let red = new Color("ff0000", "Red");
+// console.log(red.getColor());
+
+
+let name = "Breno";
+let age = 23;
+// let text = "name: " + name + " age: " + age;
+let text = `
+    name: ${ name }
+    age: ${ age }
+`;
+
+console.log(text);
