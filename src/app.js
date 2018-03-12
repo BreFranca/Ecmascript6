@@ -130,10 +130,18 @@
 // console.log(USD.format(1231312312));
 // console.log(BRL.format(123534));
 
-var US = new Intl.DateTimeFormat("en-US");
-var BR = new Intl.DateTimeFormat("pt-BR");
-var DE = new Intl.DateTimeFormat("de-DE");
+// var US = new Intl.DateTimeFormat("en-US");
+// var BR = new Intl.DateTimeFormat("pt-BR");
+// var DE = new Intl.DateTimeFormat("de-DE");
 
-console.log(US.format(new Date("2016-01-08")));
-console.log(BR.format(new Date("2016-01-02")));
-console.log(DE.format(new Date("2016-01-02")));
+// console.log(US.format(new Date("2016-01-08")));
+// console.log(BR.format(new Date("2016-01-02")));
+// console.log(DE.format(new Date("2016-01-02")));
+
+// console.log("hello".indexOf("ello") === 1);
+
+// console.log("hello".startsWith("ello", 1));
+// console.log("hello".endsWith("hell", 4));
+// console.log("hello".includes("l", 1));
+// console.log("hello".includes("l", 2));
+
