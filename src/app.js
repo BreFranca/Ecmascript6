@@ -11,15 +11,31 @@
 
 // bob.printFriends();
 
-var color = () => console.log("red");
-color();
+// var color = () => console.log("red");
+// color();
 
-var bob = {
-    _name: "Bob",
-    _friends: ["Guilherme", "Camila", "Murilo"],
-    printFriends: function printFriends() {
-        this._friends.forEach(f => console.log(this._name + " knows " + f));
-    }
+// var bob = {
+//     _name: "Bob",
+//     _friends: ["Guilherme", "Camila", "Murilo"],
+//     printFriends: function printFriends() {
+//         this._friends.forEach(f => console.log(this._name + " knows " + f));
+//     }
+// }
+
+// bob.printFriends();
+
+class Color {
+    constructor(codeColor, nameColor) {
+        this.codeColor = codeColor;
+        this.nameColor = nameColor;
+    };
+    getColor() {
+        return {
+            codeColor: this.codeColor,
+            nameColor: this.nameColor
+        }
+    };
 }
 
-bob.printFriends();
+let red = new Color("ff0000", "Red");
+console.log(red.getColor());
