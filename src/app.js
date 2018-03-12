@@ -64,17 +64,47 @@
 
 // console.log(test(5));
 
-var list = [
-    "test",
-    34,
-    {name: "Guilherme"}
-];
+// var list = [
+//     "test",
+//     34,
+//     {name: "Guilherme"}
+// ];
 
-for(var i in list) {
-    // console.log(i);
-    // console.log(list[i]);
+// for(var i in list) {
+//     // console.log(i);
+//     // console.log(list[i]);
+// }
+
+// for(let i of list) {
+//     console.log(i);
+// }
+
+class People {
+    constructor(name, email, phone) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+    toString() {
+        return `
+            Name: ${this.name}
+            Email: ${this.email}
+            Phone: ${this.phone}
+        `;
+    }
 }
 
-for(let i of list) {
-    console.log(i);
+class Client extends People {
+    constructor(id, name, email, phone) {
+        super(name, email, phone);
+        this.id = id;
+    };
+    toString() {
+        return `
+            id: ${this.id} ${super.toString()}
+        `;
+    }
 }
+
+var test = new Client(1, "Guilherme", "gui@mailcom", "119999-9999");
+console.log(test.toString());
