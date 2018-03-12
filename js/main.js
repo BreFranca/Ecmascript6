@@ -126,8 +126,16 @@
 // console.log(En);
 // console.log(De);
 
-var USD = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
-var BRL = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
+// var USD = new Intl.NumberFormat("en-US", {style: "currency", currency: "USD"});
+// var BRL = new Intl.NumberFormat("pt-BR", {style: "currency", currency: "BRL"});
 
-console.log(USD.format(1231312312));
-console.log(BRL.format(123534));
+// console.log(USD.format(1231312312));
+// console.log(BRL.format(123534));
+
+var US = new Intl.DateTimeFormat("en-US");
+var BR = new Intl.DateTimeFormat("pt-BR");
+var DE = new Intl.DateTimeFormat("de-DE");
+
+console.log(US.format(new Date("2016-01-08")));
+console.log(BR.format(new Date("2016-01-02")));
+console.log(DE.format(new Date("2016-01-02")));
