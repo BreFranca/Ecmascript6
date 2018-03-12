@@ -43,9 +43,27 @@
 // console.log(red.getColor());
 
 
-var name = "Breno";
-var age = 23;
-// let text = "name: " + name + " age: " + age;
-var text = "\n    name: " + name + "\n    age: " + age + "\n";
+// let name = "Breno";
+// let age = 23;
+// // let text = "name: " + name + " age: " + age;
+// let text = `
+//     name: ${ name }
+//     age: ${ age }
+// `;
 
-console.log(text);
+// console.log(text);
+
+// function test(valueA) {
+//     var valueB = arguments.length <- 1 || arguments[1] === undefined ? 4 : arguments[1];
+//     return valueA + valueB;
+// }
+
+// console.log(test(4, 1));
+
+function test(valueA) {
+    var valueB = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 4;
+
+    return valueA + valueB;
+}
+
+console.log(test(5));
