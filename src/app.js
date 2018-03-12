@@ -109,11 +109,17 @@
 // var test = new Client(1, "Guilherme", "gui@mailcom", "119999-9999");
 // console.log(test.toString());
 
-let color = new Set();
-color.add("red").add("green").add("red");
+// let color = new Set();
+// color.add("red").add("green").add("red");
 
-if(color.size === 2 && color.has("red")) {
-    for(let key of color.values()) {
-        console.log(key);
-    }
-}
+// if(color.size === 2 && color.has("red")) {
+//     for(let key of color.values()) {
+//         console.log(key);
+//     }
+// }
+
+var number = 123456.34;
+var En = new Intl.NumberFormat('en-US').format(number);
+var De = new Intl.NumberFormat('de-DE').format(number);
+console.log(En);
+console.log(De);

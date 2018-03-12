@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // var bob = {
 //     _name: "Bob",
@@ -111,32 +111,17 @@
 // var test = new Client(1, "Guilherme", "gui@mailcom", "119999-9999");
 // console.log(test.toString());
 
-var color = new Set();
-color.add("red").add("green").add("red");
+// let color = new Set();
+// color.add("red").add("green").add("red");
 
-if (color.size === 2 && color.has("red")) {
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
+// if(color.size === 2 && color.has("red")) {
+//     for(let key of color.values()) {
+//         console.log(key);
+//     }
+// }
 
-    try {
-        for (var _iterator = color.values()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var key = _step.value;
-
-            console.log(key);
-        }
-    } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-                _iterator.return();
-            }
-        } finally {
-            if (_didIteratorError) {
-                throw _iteratorError;
-            }
-        }
-    }
-}
+var number = 123456.34;
+var En = new Intl.NumberFormat('en-US').format(number);
+var De = new Intl.NumberFormat('de-DE').format(number);
+console.log(En);
+console.log(De);
