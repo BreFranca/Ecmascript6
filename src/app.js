@@ -118,8 +118,14 @@
 //     }
 // }
 
-var number = 123456.34;
-var En = new Intl.NumberFormat('en-US').format(number);
-var De = new Intl.NumberFormat('de-DE').format(number);
-console.log(En);
-console.log(De);
+// var number = 123456.34;
+// var En = new Intl.NumberFormat('en-US').format(number);
+// var De = new Intl.NumberFormat('de-DE').format(number);
+// console.log(En);
+// console.log(De);
+
+var USD = new Intl.NumberFormat("en-US", {style: "currency", currency: "USD"});
+var BRL = new Intl.NumberFormat("pt-BR", {style: "currency", currency: "BRL"});
+
+console.log(USD.format(1231312312));
+console.log(BRL.format(123534));
