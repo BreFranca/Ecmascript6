@@ -79,32 +79,41 @@
 //     console.log(i);
 // }
 
-class People {
-    constructor(name, email, phone) {
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
-    }
-    toString() {
-        return `
-            Name: ${this.name}
-            Email: ${this.email}
-            Phone: ${this.phone}
-        `;
+// class People {
+//     constructor(name, email, phone) {
+//         this.name = name;
+//         this.email = email;
+//         this.phone = phone;
+//     }
+//     toString() {
+//         return `
+//             Name: ${this.name}
+//             Email: ${this.email}
+//             Phone: ${this.phone}
+//         `;
+//     }
+// }
+
+// class Client extends People {
+//     constructor(id, name, email, phone) {
+//         super(name, email, phone);
+//         this.id = id;
+//     };
+//     toString() {
+//         return `
+//             id: ${this.id} ${super.toString()}
+//         `;
+//     }
+// }
+
+// var test = new Client(1, "Guilherme", "gui@mailcom", "119999-9999");
+// console.log(test.toString());
+
+let color = new Set();
+color.add("red").add("green").add("red");
+
+if(color.size === 2 && color.has("red")) {
+    for(let key of color.values()) {
+        console.log(key);
     }
 }
-
-class Client extends People {
-    constructor(id, name, email, phone) {
-        super(name, email, phone);
-        this.id = id;
-    };
-    toString() {
-        return `
-            id: ${this.id} ${super.toString()}
-        `;
-    }
-}
-
-var test = new Client(1, "Guilherme", "gui@mailcom", "119999-9999");
-console.log(test.toString());
